@@ -20,3 +20,4 @@ notification:
     notifier: c-h8ztd:n-z8kdh
   condition:
   - Success
+  - Failure
