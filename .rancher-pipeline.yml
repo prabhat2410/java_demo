@@ -14,4 +14,9 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
-notification: {}
+notification:
+  recipients:
+  - recipient: shagun.garg@india.nec.com
+    notifier: c-h8ztd:n-z8kdh
+  condition:
+  - Success
