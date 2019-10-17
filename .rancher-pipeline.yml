@@ -19,6 +19,8 @@ notification:
   recipients:
   - recipient: ashima.aggarwal@india.nec.com
     notifier: c-h8ztd:n-z8kdh
+  - recipient: prabhat.upadhyay@india.nec.com
+    notifier: c-h8ztd:n-qxgcn
   condition:
   - Success
   - Changed
