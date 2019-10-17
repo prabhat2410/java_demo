@@ -16,8 +16,9 @@ stages:
       path: ./deployment.yaml
 notification:
   recipients:
-  - recipient: prabhat.upadhyay@india.nec.com
+  - recipient: ashima.aggarwal@india.nec.com
     notifier: c-h8ztd:n-z8kdh
   condition:
   - Success
-  - Failure
+  - Changed
+  - Failed
