@@ -2,7 +2,7 @@ stages:
 - name: mvn
   steps:
   - runScriptConfig:
-      image: maven:3-jdk-8
+      image: maven:3-jdk-7
       shellScript: mvn clean install
 - name: Publish
   steps:
@@ -10,6 +10,7 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: example-samplejava:${CICD_EXECUTION_SEQUENCE}
+      registry: 127.0.0.1:34499
 - name: Deploy
   steps:
   - applyYamlConfig:
